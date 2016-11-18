@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { LoaderDirective } from './directives/loader.directive';
 import { DataTableComponent } from './components/data-table/data-table.component';
+import { UserInfoComponent } from './components/user-info/user-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoaderDirective,
-    DataTableComponent
+    DataTableComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,

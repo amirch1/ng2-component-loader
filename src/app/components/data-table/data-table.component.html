@@ -1,3 +1,14 @@
-<p>
-  data-table works!
-</p>
+<div [loader]="loading" [loadingMessage]="'Loading Cars...'" class="table-holder">
+  <table>
+    <tr>
+      <th>Brand</th>
+      <th>Yaer</th>
+      <th>Color</th>
+    </tr>
+    <tr *ngFor="let car of cars">
+      <td>{{car.brand}}</td>
+      <td>{{car.year}}</td>
+      <td>{{car.color}}</td>
+    </tr>
+  </table>
+</div>
