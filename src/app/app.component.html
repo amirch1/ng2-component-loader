@@ -3,9 +3,7 @@
   <button (click)="loadData()" [disabled]="loadingCars">Load Cars Data</button>
   <button (click)="loadUserInfo()" [disabled]="loadingUserInfo">Load User Info</button>
 </p>
-<p>
-  <app-data-table style="position: absolute" [cars]="cars" [loading]="loadingCars"></app-data-table>
-</p>
-<p>
-  <app-user-info style="position: absolute; margin-left: 550px" [userInfo]="userInfo" [loading]="loadingUserInfo"></app-user-info>
-</p>
+
+<app-data-table [loading]="loadingCars" [cars]="cars"></app-data-table>
+<app-user-info [loading]="loadingUserInfo" [userInfo]="userInfo"></app-user-info>
+
